@@ -2,12 +2,15 @@
 
 int main()
 {
+	///INITIAL VARIABLES
 	sf::RenderWindow window(sf::VideoMode(200, 200), "SFML works!");
 	sf::CircleShape shape(100.f);
 	shape.setFillColor(sf::Color::Green);
 
+	///GAME LOOP
 	while (window.isOpen())
 	{
+		///EVENTS
 		sf::Event event;
 		while (window.pollEvent(event))
 		{
@@ -15,6 +18,9 @@ int main()
 				window.close();
 		}
 
+		///LOGIC CALLS
+
+		///DRAW
 		window.clear();
 		window.draw(shape);
 		window.display();
