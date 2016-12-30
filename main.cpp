@@ -1,4 +1,5 @@
 #include <SFML/Graphics.hpp>
+#include "GameObject.h"
 
 int main()
 {
@@ -10,6 +11,9 @@ int main()
 	///GAME LOOP
 	while (window.isOpen())
 	{
+		///Quick tests
+		pc::GameObject obj1;
+
 		///EVENTS
 		sf::Event event;
 		while (window.pollEvent(event))
